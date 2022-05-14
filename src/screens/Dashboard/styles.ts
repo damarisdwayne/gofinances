@@ -63,6 +63,8 @@ export const UserName = styled.Text`
     font-family:  ${({ theme }) => theme.fonts.bold};
 `;
 
+// export const LogoutButton = styled(BorderlessButton)``;
+
 export const IconPower = styled(Feather)`
     color:  ${({ theme }) => theme.colors.secondary};
     font-size: ${RFValue(24)}px;
@@ -95,12 +97,11 @@ export const Title = styled.Text`
 
 export const TransctionsList = styled(
     FlatList as new () => FlatList<DataListProps>
-    ).attrs({
+).attrs({
     showsHorizontalScrollIndicator: false,
     contentContainerStyle: {
         paddingBottom: getBottomSpace()
     }
 })`
-
 `;
 
